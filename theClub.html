@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Join the Club!</title>
+	<link rel="stylesheet" href="styles/theClub.css">
+</head>
+	
+	<header>
+		<!--Navigation Bar -->
+		<img src="images/powerOfDreamsWhite.png" alt="Image unnavalable" height="48"> 
+		
+		<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="#">Convertible</a>
+			<ul>
+                <li><a href="convertibles/s2000.html">S2000</a></li>
+               	<li><a href="convertibles/nsx.html">NSX</a></li>
+            	</ul>
+			</li>	
+        	<li><a href="#">Coupes</a>
+			<ul>
+                <li><a href="coupes/civic.html">Civic Si</a></li>
+               	<li><a href="coupes/rsx.html">RSX</a></li>
+            	</ul>
+			</li>	
+			<li><a href="theClub.html">The Club</a></li>
+    	</ul>
+	</nav>	
+	</header>
+
+	<!--Form Fill -->
+<body>
+	<h2>Join the club to recieve exclusive offers on tuning equipment!</h2>
+	<h3><em>RED </em> fields are required <br>BLACK fields are optional</h3>
+	<main>	
+	<form name="regristration_form" action="register.html" method="get" id="regristration_form">
+		<fieldset name="f1">
+			<legend>Regristration Information</legend>
+			<label for="email">E-mail: </label>
+			<input type="email" name="email" id="email" autofocus required><br>
+			<label for="password">Password: </label>
+			<input type="password" name="password" id="password" required placeholder="At least 6 alphanumeric characters" title="Must have at least 6 alpahnumeric characters" pattern="[a-zA-Z0-9]{6,}">
+		</fieldset>
+		<fieldset name="f2">
+			<legend>Member information</legend>
+			<label for="first_name">First Name: </label>
+			<input type="text" name="first_name" id="first_name" required><br>			
+			<label for="last_name">Last name: </label>
+			<input type="text" name="last_name" id="last_name" required><br>
+			<label for="date">Age: </label>
+			<input type="date" name="start_date" id="start_date" required><br>
+			<label for="address">Address: </label>
+			<input type="text" name="address" id="address"><br>
+			<label for="city">City: </label>
+			<input type="text" name="city" id="city"><br>
+			<label for="zip_code">Zip Code: </label>
+			<input type="text" name="zip_code" id="zip_code"><br>
+			<label for="phone">Phone Number: </label>
+			<input type="text" name="phone_number" id="phone_number"><br>
+			
+		</fieldset>
+		<fieldset name="f3">
+			<legend>Vehicle Information</legend>
+			<label for="membership_type">I am iterested in: </label>
+			<select name="membership_tyle" id="membership_type">
+				<option value="j">S2000</option>
+				<option value="r">NSX</option>
+				<option value="s">Civic Si</option>
+				<option value="j">RSX</option>
+				<option value="r">TSX</option>
+				<option value="s">TL</option>
+			</select><br>
+			
+			<label for="membership_type">Can we email you?: </label>
+			<select name="membership_tyle" id="membership_type" required>
+				<option value="j">Sure</option>
+				<option value="r">No!</option>
+			</select><br>
+			
+		</fieldset>
+		<fieldset name="f4" id="buttons">
+			<legend>Submit your membership</legend>
+			<input type="reset" id="submit" value="Submit">
+			<input type="reset" id="reset" value="Reset">
+			
+		</fieldset>
+		
+	</form>
+	
+	</main>	
+		<footer>
+		<!--Copyright footer -->
+		<p>&copy; 2017 Mike Mallon, Normal, IL 61761</p>
+	</footer>
+</body>
+</html>
